@@ -349,7 +349,6 @@ p#email::before {
     transition: 0.3s;
 }
 
-
 .social-media {
     grid-area: c;
     display: flex;
