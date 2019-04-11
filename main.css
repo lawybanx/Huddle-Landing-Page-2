@@ -5,7 +5,7 @@
 }
 
 :root {
-    --white: rgb(255, 255, 255);
+    --white: #ffffff;
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
     --Very-Pale-Blue: hsl(207, 88%, 90%);
     --Pink: hsl(322, 100%, 66%);
@@ -16,6 +16,7 @@
 h1,
 h3 {
     font-family: 'Poppins', sans-serif;
+    color: w
 }
 
 h1 {
@@ -66,6 +67,18 @@ nav button {
     padding: 10px 30px;
 }
 
+nav button:hover {
+    cursor: pointer;
+    background: var(--Pink);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+nav button:active {
+    background: transparent;
+    color: var(--Pink)
+}
+
 .sc-text {
     grid-area: sc-text;
     text-align: center;
@@ -95,6 +108,18 @@ nav button {
     background: var(--Pink);
     color: var(--white);
     box-shadow: 0px 4px 8px 0px var(--Very-Pale-Blue);
+}
+
+.button:hover {
+    background: var(--Very-Pale-Blue);
+    cursor: pointer;
+    color: var(--Pink);
+    transition: 0.3s;
+}
+
+.button:active {
+    background: var(--Pink);
+    color: var(--white);
 }
 
 .sc-img {
@@ -318,6 +343,13 @@ p#email::before {
     font-size: 15px
 }
 
+.newsletter button:hover {
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
 .social-media {
     grid-area: c;
     display: flex;
@@ -325,5 +357,9 @@ p#email::before {
     padding-left: 80px;
     width: 140px;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+}
+
+.social-media a {
+    color: white
 }
