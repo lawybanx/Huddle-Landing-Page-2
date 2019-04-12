@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    /* width: 100% */
 }
 
 :root {
@@ -16,7 +15,6 @@
 h1,
 h3 {
     font-family: 'Poppins', sans-serif;
-    color: w
 }
 
 h1 {
@@ -46,6 +44,7 @@ h3 {
         ".";
 }
 
+/* Nav Grid */
 nav {
     grid-area: nav;
     display: flex;
@@ -79,6 +78,7 @@ nav button:active {
     color: var(--Pink)
 }
 
+/* Hero Grid */
 .sc-text {
     grid-area: sc-text;
     text-align: center;
@@ -96,7 +96,6 @@ nav button:active {
     padding: 0px 230px 50px;
     font-size: 18px;
     line-height: 1.5;
-    /* word-spacing: 2px */
 }
 
 .button {
@@ -130,6 +129,7 @@ nav button:active {
     justify-self: center;
 }
 
+/* Stats Grid */
 .aside-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -154,6 +154,7 @@ h2#second::before {
     display: flex
 }
 
+/* Main Grid */
 .main-grid {
     display: grid;
     grid-template-rows: repeat(3, 700px) 500px;
@@ -171,10 +172,6 @@ section.content-1,
 section.content-3 {
     background: var(--other-blue);
     height: 500px;
-}
-
-section.content-2 {
-    height: 250px;
 }
 
 span.content-1::before {
@@ -262,6 +259,7 @@ span.footer::before {
     height: 150px;
 }
 
+/* Footer Grid */
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -271,12 +269,12 @@ span.footer::before {
     padding: 50px;
     background: var(--footer-color);
     color: var(--white);
-    height: 300px;
+    height: 400px;
 }
 
 .footer-grid p {
     font-size: 13px;
-    line-height: 1.8
+    line-height: 1.8;
 }
 
 .contact-details {
